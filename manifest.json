@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Math Academy Progress Tracker",
+  "version": "1.0",
+  "description": "Adds a GitHub-style contributions chart to track your Math Academy progress",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.mathacademy.com/learn",
+    "http://www.mathacademy.com/learn"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.mathacademy.com/learn",
+        "http://www.mathacademy.com/learn"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
